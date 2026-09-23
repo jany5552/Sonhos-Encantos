@@ -141,7 +141,7 @@ body {
 .logo-area h1 span {
     display: block;
 
-    font-family: 'Parisienne', cursive;
+    font-family: 'Parisienne', "cursive";
 
     font-size: 48px;
 
