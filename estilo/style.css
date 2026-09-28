@@ -120,10 +120,10 @@ body {
    NOME DA EMPRESA
 ================================================== */
 
-.logo-area h1 {
+.logo-area h1{
     margin-top: 5px;
 
-    font-family: 'Playfair Display', serif;
+    font-family:  serif;
 
     font-size: 42px;
     line-height: 0.95;
@@ -138,10 +138,10 @@ body {
 
 /* Parte escrita em estilo manuscrito */
 
-.logo-area h1 span {
+h1 span {
     display: block;
 
-    font-family: 'Parisienne', "cursive";
+    font-family: "cursive";
 
     font-size: 48px;
 
@@ -308,6 +308,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.l2 {
+    display: block;
+
+    font-family: 'Parisienne', "cursive";
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+    margin-top: 5px;
 }
 
 
