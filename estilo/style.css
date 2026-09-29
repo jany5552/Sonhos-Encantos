@@ -776,3 +776,204 @@ body {
     }
 
 }
+
+.modelos{
+    column-gap: 28px;
+    row-gap: 28px;
+}
+
+
+/* =================================
+   CARD DO MODELO
+================================= */
+
+.modelos {
+    width: 100%;
+
+    border: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(67, 32, 91, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    font-family: "DM Sans", sans-serif;
+}
+
+.modelos:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 7px 15px rgba(67, 32, 91, 0.20);
+}
+
+.modelos:active {
+    transform: scale(0.97);
+}
+
+
+/* =================================
+   FOTO
+================================= */
+
+.foto {
+    width: 100%;
+
+    aspect-ratio: 1.38 / 1;
+
+    background: #c59bea;
+
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.modelos:hover .foto img {
+    transform: scale(1.04);
+}
+
+
+/* =================================
+   NOME DO MODELO
+================================= */
+
+.nome {
+    width: 100%;
+
+    min-height: 48px;
+
+    background: #a653c9;
+
+    color: #ffffff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 4px 6px;
+}
+
+.nome span {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+.nome small {
+    font-size: 11px;
+
+    line-height: 1;
+
+    margin-top: 3px;
+}
+
+
+/* =================================
+   BARRA INFERIOR
+================================= */
+
+.barra-inferior {
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 10px;
+
+    transform: translateX(-50%);
+
+    width: 140px;
+    height: 5px;
+
+    background: #000000;
+
+    border-radius: 10px;
+
+    z-index: 10;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 360px) {
+
+    .tela {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .titulo {
+        margin-top: 50px;
+        margin-bottom: 55px;
+    }
+
+    .titulo h1 {
+        font-size: 29px;
+    }
+
+    .titulo h2 {
+        font-size: 16px;
+    }
+
+    .selecao h3 {
+        font-size: 27px;
+        margin-bottom: 30px;
+    }
+
+    .modelos {
+        column-gap: 18px;
+        row-gap: 20px;
+    }
+
+    .nome span {
+        font-size: 11px;
+    }
+}
+
+
+/* =================================
+   COMPUTADOR
+================================= */
+
+@media (min-width: 600px) {
+
+    .tela {
+        min-height: 850px;
+
+        border-radius: 25px;
+
+        box-shadow:
+            0 10px 40px rgba(50, 20, 70, 0.15);
+    }
+
+    .barra-inferior {
+        position: absolute;
+    }
+}
