@@ -376,3 +376,403 @@ h1 span {
     }
 
 }
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    font-family: "DM Sans", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   TELA DO APLICATIVO
+========================= */
+
+.app {
+        width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #dabcff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-area {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 70px;
+}
+
+
+.logo-principal {
+    position: relative;
+
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3px;
+}
+
+.logo-s,
+.logo-e {
+    font-family: Georgia, serif;
+
+    font-size: 60px;
+    font-weight: bold;
+
+    line-height: 1;
+
+    color: #301744;
+}
+
+.logo-s {
+    position: relative;
+    left: 10px;
+}
+
+.logo-e {
+    position: relative;
+    left: -5px;
+}
+
+.logo-area h1 {
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+    line-height: 0.95;
+
+    color: #301744;
+}
+
+.logo-area h1 span {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.logo-area p {
+    margin-top: 5px;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   BOAS-VINDAS
+========================= */
+
+.boas-vindas {
+    margin-bottom: 18px;
+}
+
+.boas-vindas h2 {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 34px;
+    font-weight: 400;
+
+    margin-bottom: 2px;
+}
+
+.boas-vindas > p {
+    font-size: 15px;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.boas-vindas > span {
+    display: block;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+}
+
+.servico {
+    width: 100%;
+    min-height: 68px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.16);
+
+    color: #3c2252;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    font-family: "DM Sans", sans-serif;
+
+    text-align: left;
+}
+
+.servico:hover {
+    background: rgba(255, 255, 255, 0.3);
+
+    transform: translateY(-2px);
+}
+
+.servico:active {
+    transform: scale(0.98);
+}
+
+
+/* Ícones */
+
+.icone {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone svg {
+    width: 30px;
+    height: 30px;
+
+    fill: none;
+
+    stroke: #43245c;
+
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Texto dos serviços */
+
+.servico span {
+    flex: 1;
+
+    font-size: 10px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+
+/* Seta */
+
+.servico strong {
+    font-size: 22px;
+
+    font-weight: 400;
+
+    margin-left: 4px;
+}
+
+
+/* =========================
+   BOTÃO ORÇAMENTO
+========================= */
+
+.orcamento {
+    width: 62%;
+
+    min-height: 65px;
+
+    margin: 5px auto 0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    color: #3c2252;
+
+    display: flex;
+    align-items: center;
+
+    padding: 9px 12px;
+
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+
+    transition: 0.2s ease;
+}
+
+.orcamento:hover {
+    background: rgba(255, 255, 255, 0.35);
+
+    transform: translateY(-2px);
+}
+
+.orcamento .icone {
+    margin-right: 4px;
+}
+
+.orcamento span {
+    flex: 1;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+.orcamento strong {
+    font-size: 22px;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   FRASE FINAL
+========================= */
+
+.frase-final {
+    text-align: center;
+
+    margin-top: 65px;
+
+    color: #39204f;
+}
+
+.frase-final p {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+}
+
+.frase-final span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 360px) {
+
+    .app {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .servico {
+        min-height: 64px;
+
+        padding: 8px 5px;
+    }
+
+    .servico span {
+        font-size: 9px;
+    }
+
+    .icone {
+        width: 34px;
+        min-width: 34px;
+    }
+
+    .icone svg {
+        width: 27px;
+        height: 27px;
+    }
+
+    .frase-final {
+        margin-top: 45px;
+    }
+}
+
+
+/* =========================
+   TELAS MAIORES
+========================= */
+
+@media (min-width: 600px) {
+
+    .app {
+        min-height: 850px;
+
+        border-radius: 25px;
+
+        box-shadow: 0 10px 40px rgba(50, 20, 70, 0.15);
+    }
+
+}
