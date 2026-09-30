@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chá de Bebê</title>
+
+    <link rel="stylesheet" href="../estilo/style.css">
+
+    <!-- Fonte cursiva parecida com a da imagem -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="tela">
+
+        <!-- Barra superior -->
+        <header class="topo">
+            <span class="hora">9:41</span>
+
+            <div class="status">
+                <span>▮▮▮</span>
+                <span>◔</span>
+                <span class="bateria"></span>
+            </div>
+        </header>
+
+        <!-- Botão voltar -->
+        <button class="voltar" onclick="voltarPagina()">↩</button>
+
+        <!-- Título -->
+        <section class="cabecalho">
+
+            <div class="titulo-box">
+                <h1>Chá de Bebê</h1>
+                <p>Vários estilos para tornar o seu dia<br>
+                ainda mais especial!</p>
+                <span class="decoracao">⌁</span>
+            </div>
+
+        </section>
+
+        <!-- Seleção -->
+        <section class="modelos">
+
+            <h2>Selecione seu modelo:</h2>
+
+            <div class="grid-modelos">
+
+                <!-- Modelo 1 -->
+                <div class="modelo" onclick="selecionarModelo('Provençal')">
+                    <img src="../chadebebê/983728.png" alt="Modelo Provençal">
+
+                    
+                </div>
+
+                <!-- Modelo 2 -->
+                <div class="modelo" onclick="selecionarModelo('Minimalista')">
+                    <img src="../chadebebê/983729.png" alt="Modelo Minimalista">
+
+                    
+                </div>
+
+                <!-- Modelo 3 -->
+                <div class="modelo" onclick="selecionarModelo('Ao Ar Livre')">
+                    <img src="../chadebebê/983727.png" alt="Modelo Ao Ar Livre">
+
+                    
+                </div>
+
+                <!-- Modelo 4 -->
+                <div class="modelo" onclick="selecionarModelo('Moderno')">
+                    <img src="../chadebebê/983712.png" alt="Modelo Moderno">
+
+                    
+                </div>
+
+                <!-- Modelo 5 -->
+                <div class="modelo" onclick="selecionarModelo('Tradicional')">
+                    <img src="../chadebebê/983711.png" alt="Modelo Tradicional">
+
+
+                </div>
+
+                <!-- Modelo 6 -->
+                <div class="modelo" onclick="selecionarModelo('Temático')">
+                    <img src="../chadebebê/983736.png" alt="Modelo Temático">
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Barra inferior -->
+        <div class="barra-inferior"></div>
+
+    </main>
+
+    <script>
+        function selecionarModelo(modelo) {
+            alert("Modelo selecionado: " + modelo);
+        }
+
+        function voltarPagina() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

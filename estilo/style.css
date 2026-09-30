@@ -977,3 +977,504 @@ body {
         position: absolute;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Tela do celular */
+.tela {
+    width: 390px;
+    min-height: 844px;
+    background: #dabcff;
+    position: relative;
+    overflow: hidden;
+    padding: 0 28px 35px;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #111;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+}
+
+.bateria {
+    width: 25px;
+    height: 12px;
+    border: 2px solid #111;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.bateria::after {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: 3px;
+    width: 2px;
+    height: 5px;
+    background: #111;
+}
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+    position: absolute;
+    right: 24px;
+    top: 85px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 27px;
+    color: #18131d;
+
+    cursor: pointer;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.titulo-box {
+    width: 300px;
+    min-height: 115px;
+
+    background: rgba(255, 255, 255, 0.58);
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    padding: 17px 10px 10px;
+
+    position: relative;
+}
+
+.titulo-box h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 42px;
+    font-weight: 400;
+    color: #25113d;
+
+    line-height: 1;
+}
+
+.titulo-box p {
+    margin-top: 10px;
+
+    font-size: 11px;
+    line-height: 1.4;
+
+    color: #3f3547;
+}
+
+.decoracao {
+    display: block;
+    margin-top: 2px;
+
+    font-size: 18px;
+    color: #33213d;
+}
+
+/* =========================
+   TÍTULO DA SEÇÃO
+========================= */
+
+.modelos {
+    margin-top: 48px;
+}
+
+.modelos h2 {
+    text-align: center;
+
+    font-family: "Great Vibes", cursive;
+    font-size: 37px;
+    font-weight: 400;
+
+    color: #24112f;
+
+    margin-bottom: 35px;
+}
+
+/* =========================
+   GRID DOS MODELOS
+========================= */
+
+.grid-modelos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 22px;
+    row-gap: 24px;
+
+    justify-content: center;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.modelo {
+    width: 142px;
+
+    background: transparent;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.modelo:hover {
+    transform: translateY(-4px);
+    filter: brightness(1.04);
+}
+
+.modelo:active {
+    transform: scale(0.96);
+}
+
+/* Imagem */
+
+.modelo img {
+    width: 100%;
+    height: 118px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 9px 9px 0 0;
+}
+
+/* Nome */
+
+.nome-modelo {
+    height: 32px;
+
+    background: #a875d2;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    font-size: 10px;
+
+    border-radius: 0 0 9px 9px;
+
+    position: relative;
+}
+
+.nome-modelo span {
+    white-space: nowrap;
+}
+
+.nome-modelo small {
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+}
+
+/* =========================
+   BARRA INFERIOR
+========================= */
+
+.barra-inferior {
+    position: absolute;
+
+    bottom: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 125px;
+    height: 5px;
+
+    background: #000;
+
+    border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 400px) {
+
+    .tela {
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .grid-modelos {
+        column-gap: 15px;
+    }
+
+    .modelo {
+        width: 100%;
+    }
+
+    .modelo img {
+        height: 115px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Tela do aplicativo */
+.tela {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px 24px 45px;
+    background: #c9b0e8;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Botão voltar */
+.voltar {
+    position: absolute;
+    top: 25px;
+    right: 24px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 30px;
+    color: #17131c;
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.faixa-titulo {
+    width: 92%;
+    min-height: 105px;
+
+    background: #a98bd0;
+    border: 15px solid #eeeaf3;
+    border-radius: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.faixa-titulo h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px;
+    font-weight: 400;
+    color: #56316d;
+    margin-top: -5px;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 1px;
+}
+
+.subtitulo span {
+    width: 42px;
+    height: 1px;
+    background: #674078;
+}
+
+.subtitulo p {
+    font-size: 15px;
+    color: #4d315c;
+}
+
+.coracao {
+    font-size: 21px;
+    color: #633b76;
+    line-height: 18px;
+    margin-top: 1px;
+}
+
+/* Título principal */
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+
+    color: #151019;
+
+    margin-top: 58px;
+    margin-bottom: 42px;
+}
+
+/* Grade dos modelos */
+.modelos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 25px;
+
+    padding: 0 3px;
+}
+
+/* Card */
+.modelo {
+    width: 100%;
+    height: 174px;
+
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(75, 43, 100, 0.18);
+
+    transition: 0.2s ease;
+}
+
+.modelo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(75, 43, 100, 0.25);
+}
+
+.modelo:active {
+    transform: scale(0.97);
+}
+
+/* Imagem */
+.modelo img {
+    width: 100%;
+    height: 130px;
+
+    display: block;
+    object-fit: cover;
+}
+
+/* Nome do modelo */
+.nome-modelo {
+    height: 44px;
+
+    background: #8662b6;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0 0 18px 18px;
+}
+
+.nome-modelo span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+}
+
+.nome-modelo small {
+    font-size: 13px;
+    line-height: 12px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 360px) {
+
+    .tela {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .modelos {
+        gap: 16px;
+    }
+
+    .faixa-titulo h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 31px;
+        margin-top: 48px;
+    }
+
+    .modelo {
+        height: 160px;
+    }
+
+    .modelo img {
+        height: 118px;
+    }
+}

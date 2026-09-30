@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modelos de Decoração</title>
+
+    <link rel="stylesheet" href="../estilo/style.css">
+
+    <!-- Fonte parecida com a do modelo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="tela">
+
+        <!-- Botão voltar -->
+        <button class="voltar" onclick="history.back()">↩</button>
+
+        <!-- Cabeçalho -->
+        <section class="cabecalho">
+            <div class="faixa-titulo">
+                <h1>Modelos de Decoração</h1>
+
+                <div class="subtitulo">
+                    <span></span>
+                    <p>15 anos</p>
+                    <span></span>
+                </div>
+
+                <div class="coracao">♡</div>
+            </div>
+        </section>
+
+        <!-- Título -->
+        <h2>Selecione seu modelo:</h2>
+
+        <!-- Modelos -->
+        <section class="modelos">
+
+            <div class="modelo" onclick="selecionarModelo('Clássico')">
+                <img src="../15anos/982638.png" alt="Decoração Clássico">
+
+            </div>
+
+            <div class="modelo" onclick="selecionarModelo('Princesa')">
+                <img src="../15anos/982647.png" alt="Decoração Princesa">
+                
+            </div>
+
+            <div class="modelo" onclick="selecionarModelo('Rosa')">
+                <img src="../15anos/982628.png" alt="Decoração Rosa">
+
+            </div>
+
+            <div class="modelo" onclick="selecionarModelo('Jardim Encantado')">
+                <img src="../15anos/982645.png" alt="Jardim Encantado">
+
+            </div>
+
+            <div class="modelo" onclick="selecionarModelo('Luxo')">
+                <img src="../15anos/982627.png" alt="Decoração Luxo">
+
+            </div>
+
+            <div class="modelo" onclick="selecionarModelo('Lilás')">
+                <img src="../15anos/982646.png" alt="Decoração Lilás">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function selecionarModelo(modelo) {
+            alert("Você selecionou: " + modelo);
+        }
+    </script>
+
+</body>
+</html>
