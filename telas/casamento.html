@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casamento - Sonho e Encanto</title>
+
+    <link rel="stylesheet" href="../estilo/style.css">
+
+    <!-- Fonte para os títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="tela">
+
+        <!-- Barra superior -->
+        <header class="topo">
+            <span class="hora">9:41</span>
+
+            <div class="status">
+                <span>▮▮▮</span>
+                <span>⌁</span>
+                <span>▰</span>
+            </div>
+        </header>
+
+        <!-- Botão voltar -->
+        <button class="voltar" onclick="history.back()" aria-label="Voltar">
+            ↵
+        </button>
+
+        <!-- Cabeçalho -->
+        <section class="cabecalho">
+
+           <img src="../casamento/982879.png" alt="">
+            </div>
+
+        </section>
+
+        <!-- Título -->
+        <section class="conteudo">
+
+            <h2>Selecione seu modelo:</h2>
+
+            <!-- Modelos -->
+            <div class="modelos">
+
+                <!-- Modelo 1 -->
+                <button class="card" onclick="selecionarModelo('Ao Ar Livre')">
+                    <img
+                        src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento ao ar livre"
+                    >
+
+                    <div class="nome-modelo">
+                        Ao Ar Livre
+                        <span>♡</span>
+                    </div>
+                </button>
+
+                <!-- Modelo 2 -->
+                <button class="card" onclick="selecionarModelo('Rústico')">
+                    <img
+                        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento rústico"
+                    >
+
+                    <div class="nome-modelo">
+                        Rústico
+                        <span>♡</span>
+                    </div>
+                </button>
+
+                <!-- Modelo 3 -->
+                <button class="card" onclick="selecionarModelo('Minimalista')">
+                    <img
+                        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento minimalista"
+                    >
+
+                    <div class="nome-modelo">
+                        Minimalista
+                        <span>♡</span>
+                    </div>
+                </button>
+
+                <!-- Modelo 4 -->
+                <button class="card" onclick="selecionarModelo('Temático')">
+                    <img
+                        src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento temático"
+                    >
+
+                    <div class="nome-modelo">
+                        Temático
+                        <span>♡</span>
+                    </div>
+                </button>
+
+                <!-- Modelo 5 -->
+                <button class="card" onclick="selecionarModelo('Moderno')">
+                    <img
+                        src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento moderno"
+                    >
+
+                    <div class="nome-modelo">
+                        Moderno
+                        <span>♡</span>
+                    </div>
+                </button>
+
+                <!-- Modelo 6 -->
+                <button class="card" onclick="selecionarModelo('Tradicional')">
+                    <img
+                        src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=500&q=80"
+                        alt="Casamento tradicional"
+                    >
+
+                    <div class="nome-modelo">
+                        Tradicional
+                        <span>♡</span>
+                    </div>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Barra inferior -->
+        <div class="barra-home"></div>
+
+    </main>
+
+    <script>
+        function selecionarModelo(modelo) {
+            alert("Modelo selecionado: " + modelo);
+        }
+    </script>
+
+</body>
+</html>

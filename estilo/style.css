@@ -1471,10 +1471,363 @@ h2 {
     }
 
     .modelo {
-        height: 160px;
+        height: 115px;
     }
 
     .modelo img {
         height: 118px;
+    }
+}
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #eeeeee;
+
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   TELA DO CELULAR
+========================= */
+
+.tela {
+    width: 390px;
+    min-height: 844px;
+
+    background: #d8c2f3;
+
+    position: relative;
+    overflow: hidden;
+
+    padding-bottom: 55px;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+
+    color: #18152b;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hora {
+    font-size: 15px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+    position: absolute;
+
+    top: 112px;
+    right: 27px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+
+    color: #19142c;
+
+    cursor: pointer;
+
+    transform: rotate(90deg);
+
+    z-index: 10;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    padding: 55px 25px 0;
+}
+
+.titulo-box {
+    background: rgba(255, 255, 255, 0.68);
+
+    border-radius: 45px;
+
+    min-height: 145px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 8px rgba(70, 42, 100, 0.06);
+}
+
+.titulo-box::before {
+    content: "";
+
+    position: absolute;
+
+    width: 85%;
+    height: 65px;
+
+    background: #cdb1ed;
+
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+.titulo-box h1 {
+    font-family: "Great Vibes", cursive;
+
+    font-size: 48px;
+
+    color: #4c3777;
+
+    line-height: 1;
+
+    position: relative;
+    z-index: 1;
+}
+
+.titulo-box p {
+    margin-top: 10px;
+
+    color: #594b6e;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    position: relative;
+    z-index: 1;
+}
+
+.linha-coracao {
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #4c3777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    padding: 30px 25px 25px;
+}
+
+.conteudo h2 {
+    font-family: "Great Vibes", cursive;
+
+    color: #302046;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   GRID DOS MODELOS
+========================= */
+
+.modelos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 28px;
+    row-gap: 23px;
+
+    justify-content: center;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 7px 15px rgba(57, 35, 86, 0.2);
+}
+
+.card:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.card img {
+    width: 100%;
+
+    height: 155px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 13px 13px 0 0;
+}
+
+
+/* =========================
+   NOME DO MODELO
+========================= */
+
+.nome-modelo {
+    min-height: 38px;
+
+    background: #b18edc;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    border-radius: 0 0 13px 13px;
+}
+
+.nome-modelo span {
+    font-size: 13px;
+}
+
+
+/* =========================
+   BARRA HOME
+========================= */
+
+.barra-home {
+    position: absolute;
+
+    bottom: 18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 110px;
+    height: 5px;
+
+    background: #17131d;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 400px) {
+
+    .tela {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .cabecalho {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .conteudo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modelos {
+        column-gap: 20px;
+    }
+
+    .card img {
+        height: 140px;
     }
 }
