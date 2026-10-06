@@ -1831,3 +1831,393 @@ body {
         height: 140px;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f0fa;
+}
+
+/* Tela do celular */
+.tela {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+
+    background: #dabcff;
+
+    padding: 20px 22px 40px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+}
+
+.voltar {
+    background: none;
+    border: none;
+
+    font-size: 30px;
+    color: #43265e;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.voltar:hover {
+    transform: translateX(-4px);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-bottom: 55px;
+}
+
+.titulo-box {
+    width: 100%;
+
+    min-height: 145px;
+
+    background: #fffdfd;
+
+    border-radius: 70px;
+
+    padding: 25px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    box-shadow: 0 5px 12px rgba(70, 35, 100, 0.08);
+}
+
+
+/* pequenos detalhes laterais */
+
+.detalhe {
+    color: #9b70c5;
+
+    font-size: 24px;
+
+    position: absolute;
+}
+
+.detalhe.esquerda {
+    left: 20px;
+}
+
+.detalhe.direita {
+    right: 20px;
+
+    transform: rotate(180deg);
+}
+
+
+/* título */
+
+.titulo-box h1 {
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    color: #63388a;
+
+    margin-bottom: 4px;
+}
+
+
+/* texto */
+
+.titulo-box p {
+    color: #755488;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+    max-width: 190px;
+
+    margin: auto;
+}
+
+
+/* coração */
+
+.coracao {
+    display: block;
+
+    color: #7d4ca1;
+
+    font-size: 21px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   MODELOS
+========================= */
+
+.modelos h2 {
+    font-family: 'Dancing Script', cursive;
+
+    color: #55316e;
+
+    font-size: 29px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+
+/* grade */
+
+.grid-modelos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px 16px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.modelo {
+    background: transparent;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.modelo:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 15px rgba(65, 35, 90, 0.15);
+}
+
+.modelo:active {
+    transform: scale(0.97);
+}
+
+
+/* imagem */
+
+.foto {
+    height: 125px;
+
+    position: relative;
+
+    border-radius: 16px 16px 0 0;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* efeito escuro */
+
+.foto::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(30, 10, 40, 0.08);
+}
+
+
+/* nome dentro da imagem */
+
+.foto span {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 21px;
+
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+
+/* =========================
+   MODELOS / CORES
+========================= */
+
+/* Festivo */
+
+.festivo {
+    background:
+        radial-gradient(circle at 20% 30%, #f6c34b 0 8%, transparent 9%),
+        radial-gradient(circle at 70% 20%, #d88930 0 10%, transparent 11%),
+        radial-gradient(circle at 45% 75%, #ffce55 0 8%, transparent 9%),
+        linear-gradient(135deg, #3b1b19, #a95724, #e19b38);
+}
+
+
+/* Rosa */
+
+.rosa {
+    background:
+        radial-gradient(circle at 20% 25%, #ffb3c8 0 13%, transparent 14%),
+        radial-gradient(circle at 75% 35%, #e978a0 0 15%, transparent 16%),
+        radial-gradient(circle at 50% 80%, #ffc2d4 0 12%, transparent 13%),
+        linear-gradient(135deg, #8c3559, #e87599, #f7b1c6);
+}
+
+
+/* Lilás */
+
+.lilas {
+    background:
+        radial-gradient(circle at 20% 30%, #b77be4 0 12%, transparent 13%),
+        radial-gradient(circle at 80% 20%, #8d4cc0 0 14%, transparent 15%),
+        radial-gradient(circle at 50% 80%, #d19bf1 0 13%, transparent 14%),
+        linear-gradient(135deg, #53217a, #8847b7, #b77ad5);
+}
+
+
+/* Clássico */
+
+.classico {
+    background:
+        radial-gradient(circle at 20% 25%, #f2c477 0 12%, transparent 13%),
+        radial-gradient(circle at 75% 40%, #d99c45 0 14%, transparent 15%),
+        radial-gradient(circle at 50% 80%, #ffe0a2 0 11%, transparent 12%),
+        linear-gradient(135deg, #8a5127, #d59a4d, #f2c77d);
+}
+
+
+/* Floral */
+
+.floral {
+    background:
+        radial-gradient(circle at 20% 35%, #ffd8b0 0 13%, transparent 14%),
+        radial-gradient(circle at 75% 25%, #c87e42 0 12%, transparent 13%),
+        radial-gradient(circle at 50% 75%, #f2bd83 0 15%, transparent 16%),
+        linear-gradient(135deg, #8d4d32, #d99d68, #f2c49a);
+}
+
+
+/* Marinho */
+
+.marinho {
+    background:
+        radial-gradient(circle at 20% 25%, #318dd1 0 13%, transparent 14%),
+        radial-gradient(circle at 75% 35%, #14538f 0 15%, transparent 16%),
+        radial-gradient(circle at 50% 80%, #55b2e9 0 11%, transparent 12%),
+        linear-gradient(135deg, #092b50, #075b91, #1684bc);
+}
+
+
+/* =========================
+   NOME DOS MODELOS
+========================= */
+
+.nome-modelo {
+    height: 45px;
+
+    background: #9666ba;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    border-radius: 0 0 16px 16px;
+}
+
+.nome-modelo small {
+    font-size: 14px;
+
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 360px) {
+
+    .tela {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .grid-modelos {
+        gap: 14px 10px;
+    }
+
+    .foto {
+        height: 110px;
+    }
+
+    .titulo-box h1 {
+        font-size: 36px;
+    }
+
+    .modelos h2 {
+        font-size: 25px;
+    }
+}
