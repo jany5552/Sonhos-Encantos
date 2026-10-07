@@ -1688,7 +1688,7 @@ body {
 .modelos {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: max-content;
 
     column-gap: 28px;
     row-gap: 23px;
@@ -2220,4 +2220,933 @@ body {
     .modelos h2 {
         font-size: 25px;
     }
+}
+
+/* =========================
+   evento corporativo
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* =========================
+   TELA PRINCIPAL
+========================= */
+
+.tela {
+    width: 390px;
+    height: 844px;
+
+    background: linear-gradient(
+        180deg,
+        #c99bd9 0%,
+        #c995d8 100%
+    );
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 20px 22px;
+}
+
+
+/* =========================
+   BARRA SUPERIOR
+========================= */
+
+.topo {
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #24152d;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+    position: absolute;
+
+    top: 105px;
+    right: 27px;
+
+    border: none;
+    background: transparent;
+
+    color: #29172f;
+
+    font-size: 31px;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.voltar:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    margin-top: 85px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-box {
+    width: 100%;
+    min-height: 105px;
+
+    background-color: #e7d6e7;
+
+    border-radius: 45px;
+
+    border: 8px solid #aa76b9;
+
+    padding: 14px 12px 8px;
+
+    text-align: center;
+
+    box-shadow:
+        inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+
+/* Título principal */
+
+.titulo-box h1 {
+    color: #45274e;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    line-height: 1.1;
+}
+
+
+/* Subtítulo */
+
+.titulo-box h2 {
+    color: #402348;
+
+    font-size: 19px;
+
+    margin-top: 3px;
+
+    font-weight: bold;
+}
+
+
+/* Linha com coração */
+
+.linha {
+    width: 190px;
+
+    margin: 5px auto 0;
+
+    border-bottom: 2px solid #74527b;
+
+    position: relative;
+}
+
+.linha span {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    top: -12px;
+
+    background-color: #e7d6e7;
+
+    padding: 0 7px;
+
+    color: #65406e;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   TEXTO "SELECIONE..."
+========================= */
+
+.selecione {
+    text-align: center;
+
+    margin-top: 62px;
+    margin-bottom: 27px;
+
+    color: #3c2145;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 31px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   ÁREA DOS MODELOS
+========================= */
+
+.modelos {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 14px;
+    row-gap: 20px;
+
+    padding: 0 7px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.modelo {
+    width: 100%;
+    height: 172px;
+
+    background-color: #5d245f;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    cursor: pointer;
+
+    border: 3px solid transparent;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.modelo:hover {
+    transform: scale(1.02);
+}
+
+
+/* Card selecionado */
+
+.modelo.selecionado {
+    border: 3px solid #008cff;
+}
+
+
+/* =========================
+   IMAGEM DO CARD
+========================= */
+
+.modelo img {
+    width: 100%;
+    height: 125px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   NOME DO MODELO
+========================= */
+
+.nome {
+    width: 100%;
+    height: 44px;
+
+    background-color: #572158;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 4px;
+
+    font-size: 15px;
+
+    line-height: 1.1;
+}
+
+
+/* =========================
+   CORAÇÃO DOS CARDS
+========================= */
+
+.coracao {
+    position: absolute;
+
+    bottom: 1px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #d9afd9;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BARRA INFERIOR DO CELULAR
+========================= */
+
+.indicador {
+    position: absolute;
+
+    bottom: 12px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 135px;
+    height: 5px;
+
+    border-radius: 10px;
+
+    background-color: #161616;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 420px) {
+
+    .tela {
+        width: 100vw;
+        height: 100vh;
+
+        min-height: 700px;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .modelos {
+        gap: 15px 10px;
+    }
+
+    .modelo {
+        height: 160px;
+    }
+
+    .modelo img {
+        height: 114px;
+    }
+
+    .nome {
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .selecione {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   ORÇAMENTO
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #eeeeee;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   TELA PRINCIPAL
+========================= */
+
+.tela {
+    width: 390px;
+    height: 844px;
+
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #c99bd9 0%,
+        #c995d8 100%
+    );
+
+    padding: 20px 22px;
+}
+
+
+/* Esconde a barra de rolagem */
+
+.tela::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   TOPO
+========================= */
+
+.topo {
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #24152d;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.voltar {
+    position: absolute;
+
+    top: 105px;
+    right: 27px;
+
+    border: none;
+    background: transparent;
+
+    color: #38213f;
+
+    font-size: 29px;
+
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+.voltar:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    width: 100%;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 148px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.formulario {
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    width: 90%;
+    height: 52px;
+
+    background: #eee9dc;
+
+    border-radius: 11px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   ÍCONES
+========================= */
+
+.icone {
+    width: 28px;
+
+    margin-right: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #a079c1;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #76577d;
+
+    font-size: 14px;
+
+    font-family: Arial, sans-serif;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #c2b8c7;
+}
+
+
+/* =========================
+   DATA
+========================= */
+
+.campo input[type="date"] {
+    color: #c2b8c7;
+}
+
+
+/* =========================
+   TIPO DE EVENTO
+========================= */
+
+.campo-evento {
+    position: relative;
+}
+
+.campo-evento select {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #8b7890;
+
+    font-size: 14px;
+
+    font-family: Arial, sans-serif;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+}
+
+
+/* Texto inicial */
+
+.campo-evento select:invalid {
+    color: #c2b8c7;
+}
+
+
+/* Seta */
+
+.campo-evento .seta {
+    position: absolute;
+
+    right: 15px;
+
+    color: #9d79b4;
+
+    font-size: 20px;
+
+    pointer-events: none;
+}
+
+
+/* Opções */
+
+.campo-evento option {
+    color: #76577d;
+
+    background: #eee9dc;
+
+    padding: 10px;
+}
+
+
+/* =========================
+   BOTÃO DE EVENTO
+========================= */
+
+.opcao-evento {
+    width: 100%;
+    height: 52px;
+
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    background: #eee9dc;
+
+    color: #76577d;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px;
+
+    font-size: 12px;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Ícone/emoji */
+
+.emoji {
+    font-size: 17px;
+}
+
+
+/* Ao passar o mouse */
+
+.opcao-evento:hover {
+    background: #e4d7e8;
+
+    transform: translateY(-1px);
+}
+
+
+/* Evento selecionado */
+
+.opcao-evento.selecionado {
+    border: 2px solid #75458b;
+
+    background: #ddc8e4;
+
+    color: #593363;
+
+    box-shadow:
+        0 2px 5px rgba(80, 40, 90, 0.15);
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+.campo.mensagem {
+    height: 58px;
+}
+
+.campo textarea {
+    height: 42px;
+
+    resize: none;
+
+    padding-top: 10px;
+}
+
+
+/* =========================
+   BOTÃO ENVIAR
+========================= */
+
+.btn-enviar {
+    width: 138px;
+    height: 48px;
+
+    margin-top: 10px;
+    margin-bottom: 45px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #e6dfd2;
+
+    color: #b5a9ba;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #ddd3c5;
+
+    color: #72527c;
+}
+
+.btn-enviar:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   BARRA INFERIOR
+========================= */
+
+.indicador {
+    position: fixed;
+
+    bottom: 12px;
+
+    width: 135px;
+    height: 5px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 10px;
+
+    background: #151515;
+
+    z-index: 50;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 420px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .tela {
+        width: 100vw;
+        height: 100vh;
+
+        min-height: 700px;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .banner {
+        margin-top: 100px;
+    }
+
+    .banner img {
+        height: 140px;
+    }
+
+    .formulario {
+        gap: 18px;
+    }
+
+    .campo {
+        width: 92%;
+        height: 50px;
+    }
+
+    .tipo-evento {
+        width: 92%;
+    }
+
+    .opcoes-eventos {
+        gap: 8px;
+    }
+
+    .opcao-evento {
+        height: 50px;
+
+        font-size: 11px;
+    }
+
+    .btn-enviar {
+        margin-bottom: 50px;
+    }
+}
+
+/* =========================
+   BOTÃO SOLICITE SEU ORÇAMENTO
+========================= */
+
+.btn-orcamento {
+    width: 230px;
+    height: 52px;
+
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #eee9dc;
+
+    color: #76577d;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 2px 5px rgba(80, 40, 90, 0.12);
+
+    transition: 0.2s ease;
+}
+
+.btn-orcamento:hover {
+    background: #e2d6e6;
+
+    transform: scale(1.02);
+}
+
+.btn-orcamento:active {
+    transform: scale(0.97);
+}
+
+.titulo-orcamento {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titulo-orcamento h1 {
+    margin: 0;
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    color: #58345f;
+
+    letter-spacing: 1px;
 }

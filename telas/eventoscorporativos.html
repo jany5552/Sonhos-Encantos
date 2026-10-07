@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modelos de Orçamentação</title>
+
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+
+<body>
+
+    <main class="tela">
+
+        <!-- Barra superior -->
+        <header class="topo">
+            <span class="hora">9:41</span>
+
+            <div class="status">
+                <span>▮▮▮</span>
+                <span>⌁</span>
+                <span>▰</span>
+            </div>
+        </header>
+
+        <!-- Botão voltar -->
+        <button class="voltar" onclick="voltar()">
+            ↵
+        </button>
+
+        <!-- Título -->
+        <img src="../corporativo/983791.png" alt="">
+        </section>
+
+        <!-- Subtítulo -->
+        <h3 class="selecione">
+            Selecione seu modelo:
+        </h3>
+
+        <!-- Modelos -->
+        <section class="modelos">
+
+            <div class="modelo" onclick="selecionar(this, 'Aniversário da Empresa')">
+                <img src="../corporativo/983790.png" alt="Aniversário da Empresa">
+                
+            </div>
+
+            <div class="modelo" onclick="selecionar(this, 'Gala e Jantar Formal')">
+                <img src="../corporativo/983782.png" alt="Gala e Jantar Formal">
+                
+            </div>
+
+            <div class="modelo" onclick="selecionar(this, 'Lançamento de Produto')">
+                <img src="../corporativo/983787.png" alt="Lançamento de Produto">
+               
+            </div>
+
+            <div class="modelo" onclick="selecionar(this, 'Retiro / Team Building')">
+                <img src="../corporativo/983786.png" alt="Retiro / Team Building">
+                
+            </div>
+
+            <div class="modelo selecionado" onclick="selecionar(this, 'Evento Sustentável')">
+                <img src="../corporativo/983788.png" alt="Evento Sustentável">
+                
+            </div>
+
+            <div class="modelo" onclick="selecionar(this, 'Conferência / Tecnologia')">
+                <img src="../corporativo/983789.png" alt="Conferência / Tecnologia">
+                
+            </div>
+
+        </section>
+
+        <!-- Indicador inferior -->
+        <div class="indicador"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

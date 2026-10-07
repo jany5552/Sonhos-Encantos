@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicite seu Orçamento</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+
+<body>
+
+    <main class="tela orcamento-tela">
+
+        <!-- =========================
+             BARRA SUPERIOR
+        ========================== -->
+
+        <header class="topo">
+
+            <span class="hora">9:41</span>
+
+            <div class="status">
+                <span>▮▮▮</span>
+                <span>⌁</span>
+                <span>▰</span>
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             BOTÃO VOLTAR
+        ========================== -->
+
+        <button
+            class="voltar"
+            type="button"
+            onclick="voltar()">
+
+            ↩
+
+        </button>
+
+
+        <!-- =========================
+             BANNER
+        ========================== -->
+
+        <section class="banner">
+          <section class="titulo-orcamento">
+          <h1>Orçamento</h1>
+</section>
+
+
+        </section>
+
+
+        <!-- =========================
+             FORMULÁRIO
+        ========================== -->
+
+        <form
+            class="formulario"
+            id="formOrcamento">
+
+
+            <!-- NOME -->
+
+            <div class="campo">
+
+                <span class="icone">♙</span>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Nome completo"
+                    required>
+
+            </div>
+
+
+            <!-- TELEFONE -->
+
+            <div class="campo">
+
+                <span class="icone">♧</span>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Telefone"
+                    required>
+
+            </div>
+
+
+            <!-- E-MAIL -->
+
+            <div class="campo">
+
+                <span class="icone">✉</span>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="E-mail corporativo"
+                    required>
+
+            </div>
+
+
+            <!-- DATA -->
+
+            <div class="campo">
+
+                <span class="icone">▣</span>
+
+                <input
+                    type="date"
+                    id="data"
+                    name="data"
+                    required>
+
+            </div>
+
+
+            <!-- TIPO DE EVENTO -->
+
+<div class="campo campo-evento">
+
+    <span class="icone">◆</span>
+
+    <select id="tipoEvento" name="tipoEvento" required>
+
+        <option value="" selected disabled>
+            Tipo de evento
+        </option>
+
+        <option value="Festa Infantil">
+            🎈 Festa Infantil
+        </option>
+
+        <option value="Chá de Bebê">
+            🍼 Chá de Bebê
+        </option>
+
+        <option value="15 Anos">
+            ✨ 15 Anos
+        </option>
+
+        <option value="Casamento">
+            💍 Casamento
+        </option>
+
+        <option value="Aniversário">
+            🎂 Aniversário
+        </option>
+
+        <option value="Evento Corporativo">
+            💼 Evento Corporativo
+        </option>
+
+    </select>
+
+    <span class="seta">⌄</span>
+
+</div>
+<!-- BOTÃO SOLICITAR ORÇAMENTO -->
+
+<button
+    type="submit"
+    class="btn-orcamento">
+
+    Solicite seu orçamento
+
+</button>
