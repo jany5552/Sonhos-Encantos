@@ -2440,7 +2440,7 @@ body {
 
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    
 
     column-gap: 14px;
     row-gap: 20px;
@@ -2455,7 +2455,7 @@ body {
 
 .modelo {
     width: 100%;
-    height: 172px;
+    height: 135px;
 
     background-color: #5d245f;
 
@@ -2471,6 +2471,8 @@ body {
 
     transition: all 0.2s ease;
 }
+
+
 
 
 /* Efeito ao passar o mouse */
