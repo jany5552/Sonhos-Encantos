@@ -1569,8 +1569,6 @@ body {
 
     cursor: pointer;
 
-    transform: rotate(90deg);
-
     z-index: 10;
 }
 
@@ -2439,6 +2437,7 @@ body {
     width: 100%;
 
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     
 
@@ -2446,6 +2445,23 @@ body {
     row-gap: 20px;
 
     padding: 0 7px;
+}
+
+.titulo {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+
+    color: #3c2145;
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 31px;
+
+    font-weight: normal;
 }
 
 
