@@ -1687,8 +1687,6 @@ body {
 .modelos {
     display: grid;
 
-    grid-template-columns: max-content;
-
     column-gap: 28px;
     row-gap: 23px;
 
@@ -2412,7 +2410,6 @@ body {
 .selecione {
     text-align: center;
 
-    margin-top: 62px;
     margin-bottom: 27px;
 
     color: #3c2145;
@@ -2436,8 +2433,6 @@ body {
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
     
 
     column-gap: 14px;
@@ -2465,6 +2460,7 @@ body {
     font-size: 31px;
 
     font-weight: normal;
+    margin-top: 50px;
 }
 
 
