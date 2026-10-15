@@ -1069,7 +1069,7 @@ body {
 .cabecalho {
     display: flex;
     justify-content: center;
-    margin-top: 55px;
+    
 }
 
 .titulo-box {
@@ -1312,7 +1312,7 @@ body {
 .cabecalho {
     display: flex;
     justify-content: center;
-    margin-top: 38px;
+    
 }
 
 .faixa-titulo {
@@ -1373,9 +1373,10 @@ h2 {
     text-align: center;
 
     color: #151019;
+}
 
-    margin-top: 58px;
-    margin-bottom: 42px;
+.tAniversario {
+    margin-top: 20px;
 }
 
 /* Grade dos modelos */
@@ -1892,8 +1893,7 @@ body {
     display: flex;
     justify-content: center;
 
-    margin-top: 10px;
-    margin-bottom: 55px;
+    margin-top: 50px;
 }
 
 .titulo-box {
@@ -2319,7 +2319,6 @@ body {
 ========================= */
 
 .cabecalho {
-    margin-top: 85px;
 
     display: flex;
     justify-content: center;
@@ -2446,6 +2445,10 @@ body {
 
     padding: 0 7px;
 }
+.top{
+    margin-top: 50px;
+    padding: 55px 25px 0;
+}
 
 .titulo {
     width: 300px;
@@ -2501,7 +2504,7 @@ body {
 /* Card selecionado */
 
 .modelo.selecionado {
-    border: 3px solid #008cff;
+    border: 3px solid #5d245f;
 }
 
 
