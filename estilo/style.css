@@ -322,7 +322,9 @@ h1 span {
     margin-top: 5px;
 }
 
-
+.but{
+    text-decoration: none;
+}
 
 
 /* ==================================================
@@ -640,8 +642,6 @@ body {
 ========================= */
 
 .orcamento {
-    width: 62%;
-
     min-height: 65px;
 
     margin: 5px auto 0;
