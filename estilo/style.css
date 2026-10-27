@@ -3167,3 +3167,202 @@ body {
 
     letter-spacing: 1px;
 }
+
+/* =====================================
+   TELA DE ORÇAMENTO FINALIZADO
+   SONHO E ENCANTO
+===================================== */
+
+.pagina-finalizado {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f5f8;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #26083d;
+}
+
+.pagina-finalizado * {
+    box-sizing: border-box;
+}
+
+.tela-finalizado {
+    max-width: 600px;
+    min-height: 850px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 35px;
+    background: linear-gradient(
+        150deg,
+        #d5a0ee 0%,
+        #c17be0 52%,
+        #d19be9 100%
+    );
+}
+
+.voltar-finalizado {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    color: #26083d;
+    text-decoration: none;
+    font-size: 38px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.voltar-finalizado:hover {
+    transform: translateX(-5px);
+}
+
+.conteudo-finalizado {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icone-sucesso {
+    width: 210px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+.icone-sucesso svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-finalizado h1 {
+    margin: 15px 0 30px;
+    font-size: clamp(38px, 6vw, 58px);
+    font-weight: 500;
+    line-height: 1.15;
+    color: #26083d;
+}
+
+.mensagem-finalizado {
+    max-width: 460px;
+    margin: 0 0 65px;
+    line-height: 1.65;
+    letter-spacing: 0.3px;
+    color: #492064;
+}
+
+.botao-inicio {
+    max-width: 390px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50px;
+    background: #f6ddff;
+    color: #4b2070;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(75, 32, 112, 0.08);
+    transition: transform 0.2s ease,
+                background 0.2s ease;
+}
+
+.botao-inicio:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+.botao-inicio svg {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.detalhe-coracao {
+    width: 100%;
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    color: #54217b;
+    font-size: 31px;
+}
+
+.detalhe-coracao span {
+    width: 85px;
+    height: 12px;
+    border-top: 3px solid #54217b;
+    border-radius: 50%;
+    transform: translateY(5px) rotate(-5deg);
+}
+
+.detalhe-coracao span:last-child {
+    transform: translateY(5px) rotate(5deg);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+    .pagina-finalizado {
+        padding: 12px;
+    }
+
+    .tela-finalizado {
+        min-height: 90vh;
+        padding: 75px 22px 35px;
+        border-radius: 28px;
+    }
+
+    .voltar-finalizado {
+        top: 25px;
+        right: 25px;
+        font-size: 32px;
+    }
+
+    .icone-sucesso {
+        width: 175px;
+    }
+
+    .conteudo-finalizado h1 {
+        margin: 12px 0 22px;
+        font-size: 42px;
+    }
+
+    .mensagem-finalizado {
+        margin-bottom: 45px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .botao-inicio {
+        min-height: 62px;
+        padding: 15px 18px;
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .botao-inicio svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .detalhe-coracao {
+        margin-top: 65px;
+        gap: 17px;
+    }
+
+    .detalhe-coracao span {
+        width: 55px;
+    }
+}
