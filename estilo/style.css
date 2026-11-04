@@ -3135,7 +3135,24 @@ body {
 
     box-shadow: 0 2px 5px rgba(80, 40, 90, 0.12);
 
+    text-decoration: none;
+
     transition: 0.2s ease;
+}
+
+.btn-text{
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #76577d;
+
+    text-decoration: none;
+
+    margin-top: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-orcamento:hover {
