@@ -3155,6 +3155,13 @@ body {
     justify-content: center;
 }
 
+.img-section{
+    width: 250px;
+    height: 200px;
+
+    margin-left: 5px;
+}
+
 .btn-orcamento:hover {
     background: #e2d6e6;
 
